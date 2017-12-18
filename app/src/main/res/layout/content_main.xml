@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rajat.assignment.activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColorHint="#ffffff"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="1dp">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#ffffff"
+            android:text="Let's setup tracking!!"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:textColorHint="#ffffff"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/from_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:hint="Enter Email id 1 "
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:layout_margin="8dp"
+            >
+
+            <EditText
+                android:id="@+id/from_password_input"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:hint="Enter Password of your email above"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/toemail_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/to_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:hint="Email id which will receive tracking data"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/ctn_btn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:text="Continue"
+            android:textAlignment="center"
+
+            android:textColor="#ffffff"
+
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
